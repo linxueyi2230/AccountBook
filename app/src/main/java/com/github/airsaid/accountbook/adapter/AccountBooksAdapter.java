@@ -43,19 +43,23 @@ public class AccountBooksAdapter extends BaseQuickAdapter<AccountBook, BaseViewH
 
         LinearLayout lltIcons = helper.getView(R.id.llt_icons);
         lltIcons.removeAllViews();
-        for (User share : item.getShares()) {
-            ImageView imgIcon = new ImageView(mContext);
-            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(DimenUtils.dp2px(25), DimenUtils.dp2px(25));
-            lp.leftMargin = DimenUtils.dp2px(5);
-            imgIcon.setLayoutParams(lp);
+        if (item.getShares() != null) {
 
-            AVFile avatar = share.getAvatar();
-            if(avatar != null){
-                ImageLoader.getIns(mContext).loadIcon(avatar.getUrl(), imgIcon);
-            }else{
-                imgIcon.setImageResource(R.mipmap.ic_def_icon);
+
+            for (User share : item.getShares()) {
+                ImageView imgIcon = new ImageView(mContext);
+                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(DimenUtils.dp2px(25), DimenUtils.dp2px(25));
+                lp.leftMargin = DimenUtils.dp2px(5);
+                imgIcon.setLayoutParams(lp);
+
+                AVFile avatar = share.getAvatar();
+                if (avatar != null) {
+                    ImageLoader.getIns(mContext).loadIcon(avatar.getUrl(), imgIcon);
+                } else {
+                    imgIcon.setImageResource(R.mipmap.ic_def_icon);
+                }
+                lltIcons.addView(imgIcon);
             }
-            lltIcons.addView(imgIcon);
         }
 
         helper.addOnClickListener(R.id.img_add_user);

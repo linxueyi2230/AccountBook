@@ -151,9 +151,9 @@ public class AccountRepository implements AccountDataSource {
                 query.findInBackground(new FindCallback<Account>() {
                     @Override
                     public void done(List<Account> list, AVException e) {
-                        if (e == null) {
+                        if (e == null && list !=null) {
                             callback.querySuccess(list);
-                            callback.shareUsers(shares.size());
+                            callback.shareUsers(shares !=null?shares.size():0);
                         } else {
                             callback.queryFail(new Error(e));
                         }

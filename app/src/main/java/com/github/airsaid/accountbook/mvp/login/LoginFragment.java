@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.github.airsaid.accountbook.BuildConfig;
 import com.github.airsaid.accountbook.R;
 import com.github.airsaid.accountbook.base.BaseApplication;
 import com.github.airsaid.accountbook.base.BaseFragment;
@@ -113,6 +114,13 @@ public class LoginFragment extends BaseFragment implements LoginContract.View, V
             @Override
             public void afterTextChanged(Editable editable) {}
         });
+
+
+        if (BuildConfig.DEBUG){
+            mEdtPhone.setText("15018402350");
+            mEdtPassword.setText("lin123456");
+        }
+
     }
 
     @Override
