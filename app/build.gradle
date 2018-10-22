@@ -10,7 +10,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "com.airsaid.accountbook"
+        applicationId "com.wair.accountbook"
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 9
@@ -20,6 +20,7 @@ android {
             abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
         }
 
+        flavorDimensions "versionCode"
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [
@@ -33,6 +34,14 @@ android {
         schemaVersion 1
         daoPackage 'com.github.airsaid.accountbook.data'
         targetGenDir 'src/main/java'
+    }
+
+    productFlavors {
+        xiaomi {}
+        huawei {}
+        wandoujia {}
+        vivo {}
+        baidu {}
     }
 
     buildTypes {
