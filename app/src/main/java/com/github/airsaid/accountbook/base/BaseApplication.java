@@ -50,7 +50,7 @@ public class BaseApplication extends Application{
         registSubClass();
         initLeancloud();
         initCrashReport();
-        Shadow.init(this,"1809011255", SplashActivity.class);
+        Shadow.init("1807291629", SplashActivity.class);
     }
 
     /**

@@ -54,7 +54,7 @@
     <string name="title_forget_password">找回密码</string>
     <string name="title_user_info">个人资料</string>
     <string name="title_setting">设置</string>
-    <string name="title_about">关于大大记账本</string>
+    <string name="title_about">关于重庆掌中记彩</string>
     <string name="title_account_books">帐薄</string>
     <string name="title_add_share_user">邀请好友</string>
     <string name="title_add_book">添加帐薄</string>
@@ -162,7 +162,7 @@
     <string name="update_phone">修改手机号</string>
     <string name="update_password">修改账户密码</string>
     <string name="update_theme">修改主题色</string>
-    <string name="about_app">关于大大记账本</string>
+    <string name="about_app">关于重庆掌中记彩</string>
     <string name="login_out">退出登录</string>
     <string name="developers">Developers</string>
     <string name="airsaid">Airsaid</string>

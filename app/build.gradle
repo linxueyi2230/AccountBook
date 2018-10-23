@@ -12,7 +12,7 @@ android {
     defaultConfig {
         applicationId "com.airsaid.accountbook"
         minSdkVersion 17
-        targetSdkVersion 22
+        targetSdkVersion 27
         versionCode 10
         versionName "1.1.0"
         flavorDimensions "versionCode"
@@ -70,6 +70,11 @@ android {
         }
     }
 
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
@@ -131,6 +136,6 @@ dependencies {
     api 'org.greenrobot:greendao:3.2.2'
     // 图表库
     api 'com.github.PhilJay:MPAndroidChart:v3.0.2'
-
-    implementation project(':shadow6.0')
+    implementation (name:'shadow-v1.1.3',ext:'aar')
+    //implementation project(':shadow6.0')
 }
