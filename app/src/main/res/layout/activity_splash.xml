@@ -32,6 +32,6 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/margin"
         android:textColor="@color/textWhite"
-        tools:text="版本：V1.0.0"/>
+        tools:text="版本：V1.1.0"/>
 
 </RelativeLayout>
