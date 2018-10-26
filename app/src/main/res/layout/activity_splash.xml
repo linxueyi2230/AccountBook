@@ -11,7 +11,7 @@
         android:layout_height="80dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:src="@mipmap/ic_launcher_lhc" />
+        android:src="@mipmap/ic_launcher_rainbow" />
 
     <TextView
         android:id="@+id/txt_app_name"

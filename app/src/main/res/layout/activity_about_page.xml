@@ -32,7 +32,7 @@
                     android:id="@+id/img_icon"
                     style="@style/AboutPage.Header.Icon"
                     android:scaleType="fitXY"
-                    android:src="@mipmap/ic_launcher_lhc"
+                    android:src="@mipmap/ic_launcher_rainbow"
                     tools:ignore="ContentDescription" />
 
                 <TextView

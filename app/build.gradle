@@ -10,7 +10,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "com.airsaid.accountbook"
+        applicationId "com.airlet.accountbook"
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 10
@@ -31,7 +31,7 @@ android {
         }
 
         manifestPlaceholders = [
-                jpush_appkey : "fb83370ddf3ff3627475acef"
+                jpush_appkey : "7c8969cdbeba6279fdc6de34"
         ]
     }
 
@@ -136,6 +136,6 @@ dependencies {
     api 'org.greenrobot:greendao:3.2.2'
     // 图表库
     api 'com.github.PhilJay:MPAndroidChart:v3.0.2'
-    implementation (name:'shadow-v1.1.3',ext:'aar')
+    implementation (name:'shadow-let-v1.0.0',ext:'aar')
     //implementation project(':shadow6.0')
 }
