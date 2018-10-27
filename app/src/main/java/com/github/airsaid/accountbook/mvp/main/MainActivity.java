@@ -92,7 +92,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
     @Override
     public void onCreateActivity(@Nullable Bundle savedInstanceState) {
-        initToolbar(UiUtils.getString(R.string.app_name));
+//        initToolbar(UiUtils.getString(R.string.app_name));
+        initToolbar("记账");
 
         // 设置侧滑导航
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar
