@@ -34,4 +34,9 @@
         android:textColor="@color/textWhite"
         tools:text="版本：V1.1.0" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/launchimage" />
+
 </RelativeLayout>

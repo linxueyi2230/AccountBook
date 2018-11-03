@@ -114,7 +114,7 @@ public class BaseApplication extends Application{
             ApplicationInfo appInfo = getPackageManager().getApplicationInfo(getPackageName(),
                     PackageManager.GET_META_DATA);
             String appId = appInfo.metaData.getString("BUGLY_APPID");
-            Bugly.init(getContext(), appId, BuildConfig.DEBUG);
+            //Bugly.init(getContext(), appId, BuildConfig.DEBUG);
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
