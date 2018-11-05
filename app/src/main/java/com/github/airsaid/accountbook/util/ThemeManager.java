@@ -38,7 +38,7 @@ public class ThemeManager {
      * @param theme     主题名称
      */
     public void setTheme(Activity context, String theme){
-        String curTheme = (String) SPUtils.getSP(context, KEY_THEME, mThemes[0]);
+        String curTheme = (String) SPUtils.getSP(context, KEY_THEME, mThemes[2]);
         if(curTheme != null && curTheme.equals(theme)){
             return;
         }
@@ -58,11 +58,11 @@ public class ThemeManager {
      * @return 如: 少女粉
      */
     public String getCurThemeName(Context context){
-        return (String) SPUtils.getSP(context, KEY_THEME, mThemes[0]);
+        return (String) SPUtils.getSP(context, KEY_THEME, mThemes[2]);
     }
 
     public void init(Context context) {
-        String theme = (String) SPUtils.getSP(context, KEY_THEME, mThemes[0]);
+        String theme = (String) SPUtils.getSP(context, KEY_THEME, mThemes[2]);
         if(theme.equals(mThemes[0])){
             context.setTheme(R.style.AppTheme);
         }else if(theme.equals(mThemes[1])){
