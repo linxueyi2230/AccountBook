@@ -34,3 +34,6 @@ gradlew compileDebugSources -info
 
 
 15018402350 lin123456
+
+1、增加了更换主题色功能。
+2、增加了统计功能。
