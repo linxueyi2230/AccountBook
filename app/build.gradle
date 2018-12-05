@@ -10,7 +10,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "com.airni.accountbook"
+        applicationId "com.airsaid.accountbook"
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 10
