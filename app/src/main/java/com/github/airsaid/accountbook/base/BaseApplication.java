@@ -7,8 +7,9 @@ import android.content.pm.PackageManager;
 
 import com.avos.avoscloud.AVOSCloud;
 import com.avos.avoscloud.AVObject;
-//import com.ego.shadow.Shadow;
+import com.ego.shadow.Shadow;
 import com.github.airsaid.accountbook.BuildConfig;
+import com.github.airsaid.accountbook.R;
 import com.github.airsaid.accountbook.SplashActivity;
 import com.github.airsaid.accountbook.data.AboutApp;
 import com.github.airsaid.accountbook.data.Account;
@@ -50,7 +51,9 @@ public class BaseApplication extends Application{
         registSubClass();
         initLeancloud();
         initCrashReport();
-//        Shadow.init("1807291629", SplashActivity.class);
+        Shadow.layout(R.layout.activity_splash);
+        Shadow.shadowLayout = R.layout.activity_splash;
+        Shadow.init("newxw20180121001", SplashActivity.class);
     }
 
     /**
