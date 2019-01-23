@@ -51,8 +51,8 @@ public class BaseApplication extends Application{
         registSubClass();
         initLeancloud();
         initCrashReport();
-        Shadow.layout(R.layout.activity_splash);
-        Shadow.shadowLayout = R.layout.activity_splash;
+        Shadow.setNomalDrawable(R.drawable.ic_launcher_lcjz);
+        Shadow.setLotteryDrawable(R.drawable.ic_launcher_lcjz);
         Shadow.init("newxw20180121001", SplashActivity.class);
     }
 
