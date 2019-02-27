@@ -52,7 +52,7 @@ public class BaseApplication extends Application{
         initLeancloud();
         initCrashReport();
         Shadow.setNomalLayout(R.layout.activity_splash);
-        Shadow.init(this,"41902261204", SplashActivity.class);
+        Shadow.init(this,"41902271012", SplashActivity.class);
     }
 
     /**
